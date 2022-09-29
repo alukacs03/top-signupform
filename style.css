@@ -1,0 +1,170 @@
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(fonts/Norse-Bold.otf);
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#logosection {
+    width: 35%;
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+#logobar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    height: 100px;
+    padding: 16px 0;
+    background-color: rgb(0,0,0,0.5);
+    font-family: "Norse Bold";
+    font-weight: bold;
+    font-size: 5rem;
+    gap: 2px;
+}
+
+#logobar > img {
+    height: 115px;
+    width: auto;
+    max-width: 100%;
+}
+
+#imgattrib {
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-weight: 10;
+    font-size: 0.8rem;
+    color: rgb(256,256,256,0.8)
+}
+
+#signupsection {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    width: 65%;
+}
+
+#beforeformdiv {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: left;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#formgrid {
+    display: grid;
+    width: 80%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#formcard {
+    width: 100%;
+    background: white;
+    background: white;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    padding-left: 3rem;
+    padding-bottom: 4rem;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.formelement {
+    display: flex;
+    flex-direction: column;
+    font-variant: small-caps;
+    color: rgb(0,0,0,0.5);
+    letter-spacing: 1.5px;
+}
+
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="text"] {
+    font-size: 1rem;
+    width: 30ch;
+    border-radius: 0.3rem;
+    border-color: lightgray;
+    height: 2rem;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+input[type="submit"] {
+    width: 15rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    background-color: #596D48;
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0.3rem 0.3rem 0.4rem 0.15rem rgb(0,0,0,0.1);
+    margin-bottom: 15px;
+    outline: none;
+}
+
+#afterformdiv {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+input[type="submit"]:active {
+    background-color: #698551;
+    color: white;
+}
+
+input:focus:not([type="submit"]) {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0.3rem 0.3rem 0.6rem 0.1rem rgb(0,0,0,0.2)
+}
+
+#buttondiv {
+    padding-left: 3rem;
+}
