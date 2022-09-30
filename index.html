@@ -27,27 +27,27 @@
                     <div id="formgrid">
                         <div class="formelement">
                             <label for="firstname">first name</label>
-                            <input type="text" name="firstname" id="firstname" required>
+                            <input class="inputfield" type="text" maxlength="20" name="firstname" id="firstname" required>
                         </div>
                         <div class="formelement">
                             <label for="lastname">last name</label>
-                            <input type="text" name="lastname" id="lastname" required>
+                            <input class="inputfield" type="text" maxlength="20" name="lastname" id="lastname" required>
                         </div>
                         <div class="formelement">
                             <label for="email">email</label>
-                            <input type="email" name="email" id="email" required>
+                            <input class="inputfield" type="email"  maxlength="30" name="email" id="email" required>
                         </div>
                         <div class="formelement">
                             <label for="telephone">phone number</label>
-                            <input type="tel" name="telephone" id="telephone" required>
+                            <input class="inputfield" type="tel" name="telephone" id="telephone" required>
                         </div>
                         <div class="formelement">
-                            <label for="password">password</label>
-                            <input type="password" name="password" id="password" required>
+                            <label class="pwdlabel" for="password">password</label>
+                            <input class="inputfield" type="password" minlength="8" name="password" id="password" required><span class="pwdspan"></span>
                         </div>
                         <div class="formelement">
-                            <label for="confirmpassword">confirm password</label>
-                            <input type="password" name="confirmpassword" id="confirmpassword" required>
+                            <label class="pwdlabel" for="confirmpassword">confirm password</label>
+                            <input class="inputfield" type="password" minlength="8" name="confirmpassword" id="confirmpassword" required><span class="pwdspan"></span>
                         </div>
                     </div>
                 </div>
