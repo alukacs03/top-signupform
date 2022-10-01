@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up today!</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="logosection">
@@ -13,7 +14,7 @@
             <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"></img>
             ODIN
         </div>
-        <div id="imgattrib">Photo by <a>Halie West</a> on <a>Unsplash</a></div>
+        <div id="imgattrib">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
     </div>
     <div id="signupsection">
         <div class="row" id="beforeformdiv">
@@ -39,20 +40,21 @@
                         </div>
                         <div class="formelement">
                             <label for="telephone">phone number</label>
-                            <input class="inputfield" type="tel" name="telephone" id="telephone" required>
+                            <input class="inputfield" type="tel" name="telephone" id="telephone" pattern="[+]?\d{2}[\-]?\d{2}[\-]?\d{3}[\-]?\d{4}" required>
                         </div>
                         <div class="formelement">
                             <label class="pwdlabel" for="password">password</label>
-                            <input class="inputfield" type="password" minlength="8" name="password" id="password" required><span class="pwdspan"></span>
+                            <input class="inputfield" type="password" minlength="8" name="password" id="password" required><span id="pwdspan1">&nbsp;</span>
                         </div>
                         <div class="formelement">
                             <label class="pwdlabel" for="confirmpassword">confirm password</label>
-                            <input class="inputfield" type="password" minlength="8" name="confirmpassword" id="confirmpassword" required><span class="pwdspan"></span>
+                            <input class="inputfield" type="password" minlength="8" name="confirmpassword" id="confirmpassword" required>
+                            <span id="pwdmatch">&nbsp;</span>
                         </div>
                     </div>
                 </div>
                 <div id="buttondiv">
-                    <input type="submit" value="Create Account">
+                    <input type="submit" id="submitbutton" value="Create Account">
                 </div>
             </form>
         </div>

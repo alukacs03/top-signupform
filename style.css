@@ -132,14 +132,6 @@ form {
     border: 2px solid lightgreen;
 }
 
-.pwdspan::after {
-    content: ' Minimum 8 characters required';
-    display: inline-block;
-    color: red;
-    font-size: 0.8rem;
-}
-
-
 input[type="submit"] {
     width: 15rem;
     height: 2.8rem;
@@ -153,6 +145,10 @@ input[type="submit"] {
     box-shadow: 0.3rem 0.3rem 0.4rem 0.15rem rgb(0,0,0,0.1);
     margin-bottom: 15px;
     outline: none;
+}
+
+input[type="submit"]:disabled:hover{
+    background-color: red;
 }
 
 #afterformdiv {
